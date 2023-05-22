@@ -46,7 +46,7 @@
                   <th>Date</th>
                   <th>Customer</th>
                   <th>Total Price</th>
-                  <th>Sale By/th>
+                  <th>Sale By</th>
                   <th>Action</th>
                   </tr>
                 </thead>
@@ -85,7 +85,7 @@
 
               </table>
               <h3><td>TOTAL- {{$total}} TK</td></h3>
-              
+
 
 
             </div>

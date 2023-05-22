@@ -14,7 +14,7 @@ class saleController extends Controller
     public function sale(){
         $medicine=Stock::all();
         $customer=Customer::all();
-        return view('backend.layout.sale.sale',compact('medicine','customer')); 
+        return view('backend.layout.sale.sale',compact('medicine','customer'));
     }
     public function salemanage(){
         $sale=sale::all();

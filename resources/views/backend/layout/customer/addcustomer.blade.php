@@ -34,11 +34,11 @@
                   @foreach ($errors->all() as $error)
                   <li>{{$error}}</li>
                   @endforeach
-                  
+
                 </ul>
               </div>
             @endif
-          
+
             <form role="form" action="{{route('customer.create')}}" method="post">
               @csrf
               <div class="box-body">

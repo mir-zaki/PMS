@@ -19,7 +19,7 @@ class loginController extends Controller
     public function login_user ( Request $request)
     {
 
-        // dd($request->all());
+        //dd($request->all());
         $req=$request->except('_token');
         // dd(Auth::attempt($req));
         if(Auth::attempt($req)){
@@ -27,10 +27,10 @@ class loginController extends Controller
                 return redirect()->route('dashboard');
             }
             elseif(auth()->user()->type=='manager'){
-                return redirect()->route('dashboard');
+                return redirect()->route('sale');
             }
             elseif(auth()->user()->type=='salesman'){
-                return redirect()->route('dashboard');
+                return redirect()->route('sale');
             }
             else{
                 Auth::logout();

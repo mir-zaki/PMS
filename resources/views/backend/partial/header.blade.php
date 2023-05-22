@@ -10,11 +10,11 @@
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-          <i class="fa fa-user-circle"></i> <span>admin</span>
-        
+          <i class="fa fa-user-circle"></i> <span>{{ auth()->user()->type }} <span>:{{ auth()->user()->username }}</span>
+
       </a>
-  
-  
-      
+
+
+
     </nav>
   </header>
